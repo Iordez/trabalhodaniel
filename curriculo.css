@@ -1,0 +1,40 @@
+*{margin: 0; padding: 0;}
+.menu{list-style:none; border:1px solid #c0c0c0; float:left}
+.menu li{position:relative; float:left; border-right:1px solid #c0c0c0}
+.menu li a{color:#333; text-decoration:none;
+padding:5px 10px; display:block}
+.menu li a:hover{background:#333; color:#fff}
+
+* {box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif;}
+header {
+background-color: #666; padding: 30px; text-align: center;
+font-size: 35px; color: white;
+}
+/* Duas colunas flutuando uma ao lado da outra */
+nav {
+float: left; width: 30%; background: #fff; padding: 20px;
+}
+article {
+float: left; padding: 20px; width: 70%;
+background-color: #f1f1f1;
+}
+/* Formatação do menu */
+nav ul {list-style-type: none; padding: 0;}
+
+/* Limpa o float após a seção */
+section::after {content: ""; display: table; clear: both;}
+
+footer {
+background-color: #ffffff; padding: 10px; text-align: center;
+color: white;
+}
+/* Layout responsivo - Muda para duas linhas até 600 pixels */
+@media (max-width: 600px) {
+nav, article {width: 100%; height: auto;}
+}
+
+aside {
+   text-align: center; float: left; padding: 50px; width: 100%;
+    background-color: #ffffff;
+    }
